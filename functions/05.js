@@ -7,5 +7,5 @@
  * Example: itemsPerPerson(100, 8) should return 12.
  */
 export function itemsPerPerson(totalItems, people) {
-  // TODO: return the number of items per person by dividing totalItems by people
+  return totalItems / people
 }
