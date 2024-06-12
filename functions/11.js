@@ -7,6 +7,5 @@
  * Example: adjustedSalary(50000, 10) should return 45000.
  */
 export function adjustedSalary(salary, taxRate) {
-  // TODO: apply the tax deduction
-  // TODO: return the adjusted salary
+  return salary * (1 - taxRate / 100)
 }
