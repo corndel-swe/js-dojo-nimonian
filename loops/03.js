@@ -9,9 +9,11 @@
  * sumEvenNumbers(5);
  */
 export function sumEvenNumbers(input) {
-  // TODO: Initialize a variable to hold the sum.
-  // TODO: Use a for loop to iterate from 1 to one less than the input number.
-  // TODO: Check if the current number is even.
-  // TODO: If it is, add it to the sum variable.
-  // TODO: Return the sum.
+  let sum = 0
+  for (let i = 1; i < input; i++) {
+    if (i % 2 === 0) {
+      sum += i
+    }
+  }
+  return sum
 }

@@ -9,9 +9,11 @@
  * flattenNestedArray([[1, 2, 3], [4, 5], [6]]);
  */
 export function flattenNestedArray(arr) {
-  // TODO: Initialize a new array to hold the flattened elements.
-  // TODO: Use a for loop to iterate over the outer array.
-  // TODO: Use another for loop to iterate over each inner array.
-  // TODO: Add each element to the new array.
-  // TODO: Return the new array.
+  let flatArray = []
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      flatArray.push(arr[i][j])
+    }
+  }
+  return flatArray
 }

@@ -9,10 +9,10 @@
  * sumOfDigits(123);
  */
 export function sumOfDigits(num) {
-  // TODO: Initialize a variable to hold the sum.
-  // TODO: Use a while loop to process each digit of the number.
-  // TODO: Add the last digit of the number to the sum.
-  // TODO: Remove the last digit from the number.
-  // TODO: Continue the loop until all digits are processed.
-  // TODO: Return the sum.
+  let sum = 0
+  while (num > 0) {
+    sum += num % 10
+    num = Math.floor(num / 10)
+  }
+  return sum
 }

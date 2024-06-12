@@ -9,9 +9,13 @@
  * calculateEngagement([[5, 5, 5], [10, 10, 10]]);
  */
 export function calculateEngagement(posts) {
-  // TODO: Initialize a new array to hold the total engagement for each post.
-  // TODO: Use a for loop to iterate over the posts array.
-  // TODO: For each post, calculate the total engagement by summing likes, comments, and shares.
-  // TODO: Add the total engagement to the new array.
-  // TODO: Return the new array.
+  let engagements = []
+  for (let i = 0; i < posts.length; i++) {
+    let total = 0
+    for (let j = 0; j < posts[i].length; j++) {
+      total += posts[i][j]
+    }
+    engagements.push(total)
+  }
+  return engagements
 }
