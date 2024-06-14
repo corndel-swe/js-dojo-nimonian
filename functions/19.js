@@ -8,6 +8,13 @@
  */
 export function totalPay(hoursWorked, hourlyRate) {
   // TODO: Calculate regular pay for up to 40 hours
+  if (hoursWorked <= 40) {
+    return hoursWorked * hourlyRate
+  }
+
+  const overtime = hoursWorked - 40
+
+  return 40 * hourlyRate + overtime * hourlyRate * 1.5
   // TODO: Calculate overtime pay for hours above 40 at 1.5 times the regular rate
   // TODO: Return the total pay
 }
